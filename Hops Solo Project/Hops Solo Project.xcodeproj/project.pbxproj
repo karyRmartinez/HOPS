@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6B0CB4D02370C2FF002FC8A5 /* productStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CB4CF2370C2FF002FC8A5 /* productStruct.swift */; };
 		6B0CB4D22370C33B002FC8A5 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CB4D12370C33B002FC8A5 /* CatViewController.swift */; };
+		6B0CB4D5237223F8002FC8A5 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CB4D4237223F8002FC8A5 /* NetworkHelper.swift */; };
+		6B0CB4D723722413002FC8A5 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CB4D623722413002FC8A5 /* AppErrors.swift */; };
+		6B0CB4D92372242D002FC8A5 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CB4D82372242D002FC8A5 /* ApiClient.swift */; };
 		6BADB141236CAD8400312B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB140236CAD8400312B07 /* AppDelegate.swift */; };
 		6BADB143236CAD8400312B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB142236CAD8400312B07 /* SceneDelegate.swift */; };
 		6BADB145236CAD8400312B07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB144236CAD8400312B07 /* ViewController.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		6B0CB4CF2370C2FF002FC8A5 /* productStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productStruct.swift; sourceTree = "<group>"; };
 		6B0CB4D12370C33B002FC8A5 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		6B0CB4D4237223F8002FC8A5 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		6B0CB4D623722413002FC8A5 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		6B0CB4D82372242D002FC8A5 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		6BADB13D236CAD8400312B07 /* Hops Solo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hops Solo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BADB140236CAD8400312B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BADB142236CAD8400312B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,9 +85,20 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		6B0CB4D323722251002FC8A5 /* Networking  */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CB4D4237223F8002FC8A5 /* NetworkHelper.swift */,
+				6B0CB4D623722413002FC8A5 /* AppErrors.swift */,
+				6B0CB4D82372242D002FC8A5 /* ApiClient.swift */,
+			);
+			path = "Networking ";
+			sourceTree = "<group>";
+		};
 		6BADB134236CAD8400312B07 = {
 			isa = PBXGroup;
 			children = (
+				6B0CB4D323722251002FC8A5 /* Networking  */,
 				6B0CB4CE2370C2A6002FC8A5 /* ViewControllers */,
 				6B0CB4CD2370C28C002FC8A5 /* Models */,
 				6BADB13F236CAD8400312B07 /* Hops Solo Project */,
@@ -225,7 +242,10 @@
 				6B0CB4D22370C33B002FC8A5 /* CatViewController.swift in Sources */,
 				6BADB145236CAD8400312B07 /* ViewController.swift in Sources */,
 				6BADB141236CAD8400312B07 /* AppDelegate.swift in Sources */,
+				6B0CB4D92372242D002FC8A5 /* ApiClient.swift in Sources */,
 				6B0CB4D02370C2FF002FC8A5 /* productStruct.swift in Sources */,
+				6B0CB4D5237223F8002FC8A5 /* NetworkHelper.swift in Sources */,
+				6B0CB4D723722413002FC8A5 /* AppErrors.swift in Sources */,
 				6BADB143236CAD8400312B07 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

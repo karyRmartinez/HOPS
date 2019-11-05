@@ -101,6 +101,7 @@ class ViewController: UIViewController {
         return pstextField
     }()
        
+    //MARK:   CONSTRAINTS
       private func setTextFieldConstraints() {
            NSLayoutConstraint.activate([
               LoginTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -137,6 +138,7 @@ class ViewController: UIViewController {
                 ])
             }
     
+    //MARK: ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -149,7 +151,7 @@ class ViewController: UIViewController {
         setLoginTextFieldConstraints()
         setLoginLabelConstraints()
 
-         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Continue", style: .plain, target: self, action: #selector(continueButtonPressed))
+         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Skip", style: .plain, target: self, action: #selector(continueButtonPressed))
     }
     
 
@@ -162,6 +164,8 @@ class ViewController: UIViewController {
          self.navigationController?.pushViewController(CatViewController(), animated: true)
         //TODO: transition to a controller where you can create ToDos
     }
+  
+    //MARK: AddSubviews
     
     private func addSubviews() {
         self.view.addSubview(BrandLabel)
@@ -175,7 +179,7 @@ class ViewController: UIViewController {
 
 }
 
-
+//MARK:  EXTENSIONS
 extension UITextField {
     func setUnderLine() {
         let border = CALayer()
