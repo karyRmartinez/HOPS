@@ -8,7 +8,18 @@
 
 import Foundation
 
-
+struct VeganMakeUpElement: Codable {
+    let id: Int
+    let brand: String?
+    let name: String
+    let price:String?
+    let imageLink: String
+    let productLink: String
+    let websiteLink: String
+    let veganMakeUpDescription: String?
+    let tagList: [String]
+    
+}
 
 
 
