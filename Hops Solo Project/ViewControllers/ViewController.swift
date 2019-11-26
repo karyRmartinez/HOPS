@@ -107,8 +107,8 @@ class ViewController: UIViewController {
     
     lazy var createAccountButton: UIButton = {
         let button = UIButton(type: .system)
-        let attributedTitle = NSMutableAttributedString(string: "Dont have an account?  ", attributes: [NSAttributedString.Key.font: UIFont(name: "Verdana", size: 12)!, NSAttributedString.Key.foregroundColor: UIColor.white])
-        attributedTitle.append(NSAttributedString(string: "Sign Up", attributes: [NSAttributedString.Key.font: UIFont(name: "Verdana-Bold", size: 14)!, NSAttributedString.Key.foregroundColor:  UIColor(red: 0/255, green: 180/255, blue: 0/255, alpha: 1)]))
+        let attributedTitle = NSMutableAttributedString(string: "Sign Up", attributes: [NSAttributedString.Key.font: UIFont(name: "Verdana", size: 14)!, NSAttributedString.Key.foregroundColor: UIColor(red: 0/255, green: 180/255, blue: 0/255, alpha: 1)])
+//        attributedTitle.append(NSAttributedString(string: "Sign Up", attributes: [NSAttributedString.Key.font: UIFont(name: "Verdana-Bold", size: 14)!, NSAttributedString.Key.foregroundColor:  UIColor(red: 0/255, green: 180/255, blue: 0/255, alpha: 1)]))
         button.setAttributedTitle(attributedTitle, for: .normal)
         button.addTarget(self, action: #selector(showSignUp), for: .touchUpInside)
         return button
@@ -172,9 +172,9 @@ class ViewController: UIViewController {
         
         createAccountButton.translatesAutoresizingMaskIntoConstraints = false
    NSLayoutConstraint.activate([
-                createAccountButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-              createAccountButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100),
-               createAccountButton.widthAnchor.constraint(equalToConstant: -150),
+                createAccountButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 50),
+              createAccountButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 300),
+               createAccountButton.widthAnchor.constraint(equalToConstant: 100),
               createAccountButton.heightAnchor.constraint(equalToConstant: 35)
               ])
     }
@@ -194,11 +194,12 @@ class ViewController: UIViewController {
         setLoginLabelConstraints()
         setupCreateAccountButton()
           
-
+     // My Skip button to go to the next controller while I fix my log in
          navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Skip", style: .plain, target: self, action: #selector(continueButtonPressed))
         
         
          
+        
     }
         
     @objc func tryLogin() {
