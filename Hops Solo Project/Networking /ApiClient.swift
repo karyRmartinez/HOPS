@@ -19,8 +19,8 @@ struct MakeupAPIClient {
                 completionHandler(.failure(error))
             case .success(let data):
                 do {
-                    let ElementInfo = try JSONDecoder().decode(VeganMakeUpElement.self, from: data)
-                    completionHandler(.success([ElementInfo]))
+                    let ElementInfo = try JSONDecoder().decode([VeganMakeUpElement].self, from: data)
+                    completionHandler(.success(ElementInfo))
                 } catch {
                     completionHandler(.failure(.couldNotParseJSON(rawError: error)))
                     
@@ -31,7 +31,7 @@ struct MakeupAPIClient {
     }
     
     private var MakeupUrl: URL {
-        guard let url = URL(string: "http://makeup-api.herokuapp.com/api/v1/products.json?product=vegan") else {
+        guard let url = URL(string: "https://makeup-api.herokuapp.com/api/v1/products.json?product_vegan") else {
             fatalError("Invalid URL")
         }
         return url
@@ -39,3 +39,4 @@ struct MakeupAPIClient {
     
     private init() {}
 }
+ 
