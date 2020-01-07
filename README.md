@@ -1,6 +1,3 @@
-# HOPS
-Animal Friendly App 
-
 
 # Hops
 
