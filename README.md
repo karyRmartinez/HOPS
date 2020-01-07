@@ -6,13 +6,13 @@ Animal Friendly App for vegan products
 
 ### Prerequisites
 
-Xcode
-Firebase
+* Xcode
+* Firebase
 
 ```
 
 ```
-### Login & Sign up PAge
+### Login & Sign up Page
 
 Using Auth Firebase Users are able to log in and sign up to the app.
 
