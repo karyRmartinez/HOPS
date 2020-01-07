@@ -26,6 +26,8 @@ Using ML Bar Kit for iOS
 Previewing live video
 Detecting Barcodes
 
+![](EuphoricEquatorialCommabutterfly-max-1mb.gif.gif)
+
 ### APIs
 * Makeup API
 * Vegan market API
