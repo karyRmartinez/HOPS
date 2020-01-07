@@ -23,8 +23,8 @@ A view Controller to show the different categories the user can use.
 ### Barcode
 
 Using ML Bar Kit for iOS 
-Previewing live video
-Detecting Barcodes
+* Previewing live video
+* Detecting Barcodes
 
 ![](EuphoricEquatorialCommabutterfly-max-1mb.gif)
 
