@@ -26,6 +26,7 @@ Using ML Bar Kit for iOS
 * Previewing live video
 * Detecting Barcodes
 
+Example:
 ![](https://gifimage.net/wp-content/uploads/2018/10/barcode-scanner-gif-6.gif)
 
 ### APIs
