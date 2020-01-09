@@ -30,7 +30,7 @@ Using ML Bar Kit for iOS
 * Previewing live video
 * Detecting Barcodes
 
-Example:
+
 ![](Scan.gif)
 
 ### APIs
