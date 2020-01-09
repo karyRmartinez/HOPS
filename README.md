@@ -15,6 +15,8 @@ Animal Friendly App for vegan products
 ### Login & Sign up Page
 
 Using Auth Firebase Users are able to log in and sign up to the app.
+![](Screen Shot 2020-01-09)
+
 
 ### Categories
 
