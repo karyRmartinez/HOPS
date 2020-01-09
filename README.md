@@ -31,7 +31,7 @@ Using ML Bar Kit for iOS
 * Detecting Barcodes
 
 Example:
-![](blog2 (1).gif)
+![](blog2(1).gif)
 
 ### APIs
 * Makeup API
