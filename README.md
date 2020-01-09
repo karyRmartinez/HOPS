@@ -31,7 +31,7 @@ Using ML Bar Kit for iOS
 * Detecting Barcodes
 
 Example:
-![](http://kunmii.blogspot.com/2018/01/building-animated-qr-scanner-viewfinder.html)
+![](blog2 (1).gif)
 
 ### APIs
 * Makeup API
