@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
 // MARK: LOGIN BUTTON
     lazy var LoginButton: UIButton = {
@@ -237,11 +237,11 @@ class ViewController: UIViewController {
         }
  
     @objc private func navigateScreen() {
-         self.navigationController?.pushViewController(CatViewController(), animated: true)
+         self.navigationController?.pushViewController(FeedViewController(), animated: true)
      }
     
     @objc func continueButtonPressed(){
-         self.navigationController?.pushViewController(CatViewController(), animated: true)
+         self.navigationController?.pushViewController(FeedViewController(), animated: true)
         //TODO: transition to a controller where you can create ToDos
     }
   
@@ -295,6 +295,6 @@ class ViewController: UIViewController {
 }
 
 //MARK:  EXTENSIONS
-extension ViewController: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
     
 }

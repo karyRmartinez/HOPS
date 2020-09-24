@@ -9,7 +9,7 @@
 import UIKit
 
 
-class CatViewController: UIViewController {
+class FeedViewController: UIViewController {
     
 //    lazy var tapGesture: UIGestureRecognizer = {
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewTapped(_:)))
