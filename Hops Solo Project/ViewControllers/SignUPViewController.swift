@@ -10,6 +10,11 @@ import UIKit
 import FirebaseAuth
 
 class SignUPViewController: UIViewController {
+   
+    
+    //In this ViewController, the user is able to sign up for the application and their information is automatically saved online using firebase. 
+    //On line 100, we start with button functionality. When the user presses the button, they must follow the guidelines for minimum characters for the password.
+    //
     
     
     //MARK: UI Objects
